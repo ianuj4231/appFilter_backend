@@ -20,8 +20,9 @@ import com.fashion.service.filter.PriceFilter;
 import com.fashion.service.filter.RatingFilter;
 import com.fashion.service.filter.SizeFilter;
 
-@RestController
 @RequestMapping("/api/v1/fashion")
+@RestController
+
 public class FashionController {
 		
 	   @Autowired

@@ -11,16 +11,14 @@ public class SizeFilter   implements FilterStrategy{
 	
 	@Override
 	public boolean isMatches(Fashion obj) {
-
 		if(obj.getSize().equalsIgnoreCase (size) ) {
 			return true;
 		}
 		else return false;
 	}
-	
 	@Override
     public String toString() {
         return "size=" + size;
-    }
+    }   
 
 }
