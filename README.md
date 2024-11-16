@@ -5,7 +5,6 @@
 
 1. Java 17 installation - `[https://www.oracle.com/in/java/technologies/downloads/#java21](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)`
 
-
 2. Install eclipse IDE -  `https://www.eclipse.org/downloads/`
 
 3. Download repo zip folder ![image](https://github.com/user-attachments/assets/7b583165-945c-4af9-914d-26fc0a360271)
