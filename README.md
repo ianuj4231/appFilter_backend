@@ -50,6 +50,9 @@
 
 ## Few API Endpoints  (All endpoints use the GET method)
 
+(if therevo are no products that satisfy the input criteria, an empty list will be returned)
+
+**can copy/paste the below endpoints in the browser to get customized results**
 
 1. Get the first page of products, sorted by rating in descending order:
 `http://localhost:8080/api/v1/fashion/filter`
