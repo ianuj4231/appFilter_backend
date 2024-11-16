@@ -32,21 +32,20 @@
    ![image](https://github.com/user-attachments/assets/05856b47-4954-4bb1-ac73-85a14701c739)
 
 
-14. erase the location and type cmd
+14. erase the location and type cmd to get a terminal opened
 
    ![image](https://github.com/user-attachments/assets/68bd07da-52b4-40aa-91f2-87968f03cf12)
 
 
-18. type commadn `redis-server.exe`
+15. type command `redis-server.exe`
 
   ![image](https://github.com/user-attachments/assets/04ae6a95-f204-4e1d-9cce-41dadc457752)
 
-19. This starts the redis server.
+16. This starts the redis server.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/f55bf6e8-cd5e-4bc4-9839-43ab150d2927)
 
-
-21. Now since we both the server code and redis server are running , we can test if our endpoints are working   
+17. Now since we have both the server code and redis server up and running , we can test if our endpoints are working   
 
 
 ## Few API Endpoints  (All endpoints use the GET method)
