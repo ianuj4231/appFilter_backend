@@ -117,5 +117,6 @@
 
 **to be run using junit**
 
-1. **Integration test** - href=" https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/controller/FashionControllerTest.java <u><a "> https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/controller/FashionControllerTest.java <u><a </a></u>.
-2. **Unit test**  -  href=" https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/service/DemoApplicationTests.java <u><a "> https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/service/DemoApplicationTests.java <u><a </a></u>. 
+1. **Integration test** - <a href="https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/controller/FashionControllerTest.java"> https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/controller/FashionControllerTest.java </a>
+
+2. **Unit test**  -  <a href="https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/service/DemoApplicationTests.java">https://github.com/ianuj4231/appFilter_backend/blob/main/src/test/java/com/fashion/service/DemoApplicationTests.java"</a>
