@@ -89,16 +89,16 @@
 
 ## Potential improvements with more time
 
-1. Pub/Sub Messaging for Cache Invalidation/Update: Utilize a Pub/Sub messaging pattern to automatically invalidate or update the cache when product data changes. For example, when an admin updates product details or adds a new item to the inventory, a message is published to a Redis channel that triggers cache invalidation or updates, ensuring that all app instances use fresh data.
-2. RBAC (Role-Based Access Control): Implementing RBAC can enhance security by controlling which users or roles have permission to modify the cache or access specific data. For instance, only admin users can add, update, or delete product information, ensuring unauthorized users do not impact cache consistency.
-3. Distributed Cache: Use distributed caching so multiple instances of the fashion app can share the same cached data, enhancing scalability and reducing database load. For example, if multiple users search for products, the distributed cache ensures all instances access the same cached results, speeding up response times and maintaining data consistency across servers.
+1. `**Pub/Sub Messaging for Cache Invalidation/Update:**` Utilize a Pub/Sub messaging pattern to automatically invalidate or update the cache when product data changes. For example, when an admin updates product details or adds a new item to the inventory, a message is published to a Redis channel that triggers cache invalidation or updates, ensuring that all app instances use fresh data.
+2. `**RBAC (Role-Based Access Control):**` Implementing RBAC can enhance security by controlling which users or roles have permission to modify the cache or access specific data. For instance, only admin users can add, update, or delete product information, ensuring unauthorized users do not impact cache consistency.
+3. `**Distributed Cache**`: Use distributed caching so multiple instances of the fashion app can share the same cached data, enhancing scalability and reducing database load. For example, if multiple users search for products, the distributed cache ensures all instances access the same cached results, speeding up response times and maintaining data consistency across servers.
 
 ## Design pattern
 
 1. The Strategy pattern is used because it allows the fashion app to apply multiple criteria dynamically to filter data during runtime. The Strategy pattern helps create a flexible system where each filter criterion (like category, price range, size) is implemented as a separate strategy or class. These strategies can be combined to process the same dataset or repository.
 2. This design makes it easy to add, modify, or remove filters without changing the main code structure, promoting open/closed principle—the code is open for extension but closed for modification since u can add  extra filtering criteria without having to modify existing filterCriteria files.
 <u><a href="https://github.com/ianuj4231/appFilter_backend/tree/main/src/main/java/com/fashion/service/filter">https://github.com/ianuj4231/appFilter_backend/tree/main/src/main/java/com/fashion/service/filter</a></u>.
-## Caching Using Redis Key-Value Pair
+## Caching Using Redis:
 
 1. Caching in this fashion app is implemented using Redis, where data is stored as key-value pairs. Each key is a unique string composed of the filter criteria (a serialized string representation of the strategies list) combined with the page number and page size to represent a specific filtered result. The value stored is a custom object containing the filtered list of products. This allows quick retrieval of frequently requested data, reducing the need for repeated database queries and improving response time for paginated product listings.
 
