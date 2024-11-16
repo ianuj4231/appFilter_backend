@@ -51,8 +51,6 @@ public class FashionService {
     @Cacheable(value = "fashionItems", key = "#strategies.toString() + '_' + #page + '_' + #pagesize + '_' + #sortby + '_' + #sortdirection")
     public List<Fashion> filterObjects(List<FilterStrategy> strategies, int page, int pagesize, String sortby, String sortdirection) {
 		try {
-			System.out.println("   cached so i wont be printed on console :))    ");
-
 			System.out.println(strategies.toString() + "  "+ page + " "+ pagesize+ " "+ sortby+ " "+ sortdirection);
 
 			List<Fashion> filteredlist = new ArrayList<>();
