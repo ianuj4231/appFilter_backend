@@ -96,8 +96,8 @@
 ## Design pattern
 
 1. The Strategy pattern is used because it allows the fashion app to apply multiple criteria dynamically to filter data during runtime. The Strategy pattern helps create a flexible system where each filter criterion (like category, price range, size) is implemented as a separate strategy or class. These strategies can be combined to process the same dataset or repository.
-2. This design makes it easy to add, modify, or remove filters without changing the main code structure, promoting open/closed principle—the code is open for extension but closed for modification since u can add  extra filtering criteria without having to modify existing filterCriteria files. It is also extendable.
- <a href="https://github.com/ianuj4231/appFilter_backend/tree/main/src/main/java/com/fashion/service/filter">Markdown Guide</a>.
+2. This design makes it easy to add, modify, or remove filters without changing the main code structure, promoting open/closed principle—the code is open for extension but closed for modification since u can add  extra filtering criteria without having to modify existing filterCriteria files.
+href="https://github.com/ianuj4231/appFilter_backend/tree/main/src/main/java/com/fashion/service/filter">https://github.com/ianuj4231/appFilter_backend/tree/main/src/main/java/com/fashion/service/filter</a></u>.
 ## Caching Using Redis Key-Value Pair
 
 1. Caching in this fashion app is implemented using Redis, where data is stored as key-value pairs. Each key is a unique string composed of the filter criteria (a serialized string representation of the strategies list) combined with the page number and page size to represent a specific filtered result. The value stored is a custom object containing the filtered list of products. This allows quick retrieval of frequently requested data, reducing the need for repeated database queries and improving response time for paginated product listings.
