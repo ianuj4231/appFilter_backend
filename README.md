@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7b0fbeb4-164e-4083-beb7-17769321a91f)# Ecommerce_Fashion_Products_filtering_backend
+# Ecommerce_Fashion_Products_filtering_backend
 
 ## Pre-requisites & steps to run:
 
