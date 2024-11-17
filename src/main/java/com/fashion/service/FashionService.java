@@ -69,9 +69,7 @@ public class FashionService {
 	        
 			int startindex = Math.min( page*pagesize, filteredlist.size() ) ;
 			int endindex = Math.min(  (page+1)* pagesize,  filteredlist.size());
-		        if (startindex >= filteredlist.size()){
-                               return Collections.emptyList();
-			}
+		        
 			List<Fashion> paginatedlist = filteredlist.subList(startindex, endindex);
 
 	        if(sortby.equalsIgnoreCase("rating")){
