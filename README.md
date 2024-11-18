@@ -125,9 +125,9 @@
 Java `subList()` does not copy the elements to a new list for pagination ... instead it creates a view or a window of the original list. The elements are not duplicated, so it is efficient for large lists. `sublist()`  holds a reference, to the original list.
 
 
-** space complexity of `subList()` ** : 
+space complexity of `subList()`  : 
 Since subList() holds references to the original list, the space it consumes is constant, independent of the sublist size.
 
-**time complexity of `sublist()` ** :
+time complexity of `sublist()`  :
 No iteration over the list elements is involved when creating the view.
 
