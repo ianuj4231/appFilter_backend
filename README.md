@@ -26,7 +26,7 @@
 
 12. Once zip folder is  installed,  extract Redis folder.
 
-13. once extracted, pls click on the folder.. and then  click on the top  seacrch bar select the location
+13. once extracted, pls click on the extracted folder.. `Redis-x64-3.0.504` and then  click on the top  seacrch bar select the location
 
    ![image](https://github.com/user-attachments/assets/05856b47-4954-4bb1-ac73-85a14701c739)
 
@@ -46,8 +46,14 @@
 
 17. Now since we have both the server code and redis server up and running , we can test if our endpoints are working   
 
+## running few apis (screenshots): 
 
-## Few API Endpoints  (All endpoints use the GET method)
+18. ![image](https://github.com/user-attachments/assets/0bd6d2af-8fe5-4cf9-ba0b-3fc1ac303154)
+
+19. ![image](https://github.com/user-attachments/assets/10f20a1d-133d-4f60-b946-dbb0f1c65089)
+
+
+## list of few API Endpoints  (All endpoints use the GET method)
 
 (if therevo are no products that satisfy the input criteria, an empty list will be returned)
 
@@ -55,6 +61,8 @@
 
 1. Get the first page of products, sorted by rating in descending order:
 `http://localhost:8080/api/v1/fashion/filter`
+
+
 
 3. Filter products with size `S` and color `red`:
    `http://localhost:8080/api/v1/fashion/filter?size=S&color=red`
