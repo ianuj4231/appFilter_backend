@@ -96,8 +96,7 @@
 
 ## Potential improvements with more time
 
-1. **Pub/Sub Messaging for Cache Invalidation/Update:** Utilize a Pub/Sub messaging pattern to automatically invalidate or update the cache when product data changes. For example, when an admin updates product details or adds a new item to the inventory, a message is published to a Redis channel that triggers cache invalidation or updates, ensuring that all app instances use fresh data.
-2. **RBAC (Role-Based Access Control):** Implementing RBAC can enhance security by controlling which users or roles have permission to modify the cache or access specific data. For instance, only admin users can add, update, or delete product information, ensuring unauthorized users do not impact cache consistency.
+1. **RBAC (Role-Based Access Control):** Implementing RBAC can enhance security by controlling which users or roles have permission to modify the cache or access specific data. For instance, only admin users can add, update, or delete product information, ensuring unauthorized users do not impact cache consistency.
 3. **Distributed Cache**: Use distributed caching so multiple instances of the fashion app can share the same cached data, enhancing scalability and reducing database load. For example, if multiple users search for products, the distributed cache ensures all instances access the same cached results, speeding up response times and maintaining data consistency across servers. Can also implement write-through cache concept esp in scenarios like our fashion e-commerce space where we need to maintain data consistency especially in count of product(s) in inventory in real-time, example: particularly when multiple processes or users attempt to modify the inventory concurrently(either parallel or sequential).
 
 ## Design pattern
